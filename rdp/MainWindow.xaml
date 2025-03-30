@@ -1,0 +1,118 @@
+﻿<Window x:Class="rdp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:local="clr-namespace:rdp"
+        xmlns:model="clr-namespace:rdp.Models"
+        xmlns:views="clr-namespace:rdp.Views"
+        Title="HomeScreen"
+        Width="1270"
+        Height="830"
+        AllowsTransparency="True"
+        Background="Transparent"
+        MouseDown="Window_MouseDown"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        UseLayoutRounding="True"
+        mc:Ignorable="d">
+    <Grid Background="Transparent"
+          SnapsToDevicePixels="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <!-- Header Section: Title and Toggle -->
+        <views:Header Grid.Row="0" Grid.ColumnSpan="2"/>
+
+        <!-- Sidebar with ScrollViewer -->
+        <StackPanel Background="#111111"
+                    Margin="0"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    SnapsToDevicePixels="True">
+            <!-- Logo at the top -->
+            <Image Source="Assets/Images/logo.png"
+                   Height="100"
+                   Margin="0,20,0,20"
+                   Width="150"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" />
+            <!-- Navigation Buttons -->
+            <ListBox Background="#111111"
+                     SelectionMode="Single"
+                     SelectionChanged="sidebar_SelectionChanged"
+                     x:Name="sidebar"
+                     BorderThickness="0">
+                <model:NavButton Navlink="/Views/Dashboard.xaml"
+                                 Text="Dashboard"
+                                 Icon="Home"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="General Tweaks"
+                                 Icon="Gear"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="Windows Tweaks"
+                                 Icon="Windows"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="Power Tweaks"
+                                 Icon="Bolt"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="Network Tweaks"
+                                 Icon="Signal"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="GPU Tweaks"
+                                 Icon="Microchip"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="CPU Tweaks"
+                                 Icon="Microchip"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="Clean Tweaks"
+                                 Icon="Broom"
+                                 Margin="3" />
+                <model:NavButton Navlink="/Views/Tweaks.xaml"
+                                 Text="Debloat Tweaks"
+                                 Icon="Trash"
+                                 Margin="3" />
+            </ListBox>
+        </StackPanel>
+
+        <Frame Grid.Column="1"
+               Grid.Row="1"
+               x:Name="navframe"
+               VerticalAlignment="Stretch"
+               HorizontalAlignment="Stretch"
+               NavigationUIVisibility="Hidden"
+               Background="Black" />
+
+        <!-- Bottom Borders -->
+        <Border Background="#111111"
+                BorderBrush="#111111"
+                Grid.Column="0"
+                Grid.Row="2"
+                CornerRadius="0,0,0,15"
+                Margin="0,-1,0,0"
+                SnapsToDevicePixels="True" />
+        <Border Background="Black"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderBrush="Black"
+                Margin="0,-1,0,0"
+                CornerRadius="0,0,15,0"
+                SnapsToDevicePixels="True" />
+    </Grid>
+</Window>

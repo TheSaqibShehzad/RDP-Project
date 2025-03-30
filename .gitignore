@@ -1,0 +1,103 @@
+# Build results
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Macros
+*.vcxproj.user
+*.vcxproj.filters
+
+# Rider files
+.idea/
+
+# Package-related files
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Backup and logs
+*.log
+*.bak
+*.swp
+*.tmp
+*.scc
+
+# Debug files
+debug.log
+.vscode/
+.vscode-test/
+
+# ReSharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+!/.nuget/packages.config
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# WPF-specific files
+*.cache
+*.aps
+*.ilk
+*.lib
+*.obj
+*.pch
+*.idb
+*.ipch
+*.tlog
+*.lastbuildstate
+*.sdf
+*.opensdf
+*.opendb
+*.sqlite
+*.vc.db
+*.VC.db
+*.iobj
+*.ipdb
+
+# Editor-specific
+*.vscode/
+.idea/
+*.sln.iml
+
+# Publish outputs
+.publish/
+
+# Temporary files
+*.temp
+*.tmp
+*.TMP
+*.bak
+
+# Deployment files
+.publish.xml
+publish/
+
+# Rider-specific files
+.idea/
+*.sln.DotSettings.user
+
+# Uncomment the following if you have sensitive settings
+# appsettings.json
+# appsettings.Development.json
+# appsettings.Production.json

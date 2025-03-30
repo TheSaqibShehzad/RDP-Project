@@ -1,0 +1,29 @@
+﻿<Application x:Class="rdp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:rdp"
+             StartupUri="/Views/ActivationWindow.xaml"
+             >
+
+    <Application.Resources>
+
+      
+
+        <ResourceDictionary >
+                    <Style TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="pack://application:,,,/Assets/Fonts/#Poppins" />
+                <Setter Property="FontSize" Value="18" />
+                    </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/SideBar.xaml"/>
+                <ResourceDictionary Source="Themes/Button.xaml"/>
+                <ResourceDictionary Source="Themes/Card.xaml"/>
+                <ResourceDictionary Source="Themes/ScrollBar.xaml"/>
+    
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+        
+
+    </Application.Resources>
+</Application>

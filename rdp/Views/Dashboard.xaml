@@ -1,0 +1,394 @@
+﻿<Page x:Class="rdp.Views.Dashboard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+      xmlns:local="clr-namespace:rdp.Views"
+      xmlns:util="clr-namespace:rdp.Utilities"
+      mc:Ignorable="d"
+      Height="770"
+      Width="1050"
+      Title="Dashboard">
+
+    <Page.Resources>
+
+        <util:InnerRadiusConverter x:Key="InnerRadiusConverter" />
+    </Page.Resources>
+    <Grid Background="Black"
+          >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Hi, Welcome Back!"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   Margin="10,0" />
+
+        <StackPanel Grid.Row="0"
+                    Grid.Column="2"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button Style="{StaticResource RoundedButton}"
+                    Content="Andrew Miller"
+                    Background="#191919"
+                    FontSize="14"
+                    Margin="10" />
+            <Button Style="{StaticResource RoundedButton}"
+                    Content="Restore Point"
+                    Background="Red"
+                    Margin="10" />
+        </StackPanel>
+
+        <!-- Cards Container -->
+        <Border Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                CornerRadius="8"
+                Background="#0C0C0C"
+                Margin="10">
+            <!--<ScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Auto">-->
+                <Grid  Background="#0C0C0C"
+                       Margin="10">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="6*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="4*" />
+                    </Grid.ColumnDefinitions>
+
+
+                    <!-- Cards -->
+                    <ContentControl Grid.Row="0"
+                                    Grid.Column="0"
+                                    Template="{StaticResource CardTemplate}"
+                                    Tag="CPU Usage"
+                                    >
+                        <Grid>
+                            <!-- Gauge -->
+                            <lvc:Gauge x:Name="CPU_Gauge"
+                                       StrokeThickness="1"
+                                       From="0"
+                                       To="100"
+                                       Value="75"
+                                       Foreground="White"
+                                       Stroke="#373737"
+                                       Margin="20"
+                                       InnerRadius="150"
+                                   ToColor="#7F67F5"
+                                   FromColor="#7F67F5"
+                                       FontFamily="Poppins"
+                                       HorizontalAlignment="Stretch"
+                                       VerticalAlignment="Stretch"
+                                       UseLayoutRounding="True">
+                                <!-- Event for size change -->
+                                <lvc:Gauge.GaugeBackground>
+                                    <SolidColorBrush Color="White"
+                                                     Opacity="0.1" />
+                                </lvc:Gauge.GaugeBackground>
+                            </lvc:Gauge>
+
+
+                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Bottom"
+                                        Grid.Row="2"
+                                        Margin="0,0,0,0">
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="10">
+                                    <Rectangle Width="15"
+                                               Height="15"
+                                           Fill="#7F67F5"
+                                               Margin="0,0,5,0" />
+                                    <TextBlock Text="Used space"
+                                               VerticalAlignment="Center"
+                                               Foreground="White"
+                                               FontSize="12" />
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="10">
+                                    <Rectangle Width="15"
+                                               Height="15"
+                                               Fill="#373737"
+                                               Margin="0,0,5,0" />
+                                    <TextBlock Text="Free space"
+                                               VerticalAlignment="Center"
+                                               Foreground="White"
+                                               FontSize="12" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </ContentControl>
+
+
+
+
+
+                    <ContentControl Grid.Row="0"
+                                    Grid.Column="1"
+                                    Template="{StaticResource CardTemplate}"
+                                    Tag="RAM Usage"
+                                    >
+                        <Grid>
+                            <!-- Gauge -->
+                            <lvc:Gauge x:Name="RAM_Gauge"
+                                       StrokeThickness="1"
+                                       From="0"
+                                       To="100"
+                                       Value="30"
+                                       Foreground="#ffffff"
+                                       Stroke="#373737"
+                                       Margin="20"
+                                       InnerRadius="80"
+                                   ToColor="#78f567"
+                                   FromColor="#78f567"
+                                       FontFamily="Poppins"
+                                       HorizontalAlignment="Stretch"
+                                       VerticalAlignment="Stretch"
+                                       UseLayoutRounding="True">
+                                <!-- Event for size change -->
+                                <lvc:Gauge.GaugeBackground>
+                                    <SolidColorBrush Color="White"
+                                                     Opacity="0.1" />
+                                </lvc:Gauge.GaugeBackground>
+                            </lvc:Gauge>
+                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Bottom"
+                                        Grid.Row="2"
+                                        Margin="0,0,0,0">
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="10">
+                                    <Rectangle Width="15"
+                                               Height="15"
+                                               Fill="#78f567"
+                                               Margin="0,0,5,0" />
+                                    <TextBlock Text="Used space"
+                                               VerticalAlignment="Center"
+                                               Foreground="White"
+                                               FontSize="12" />
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="10">
+                                    <Rectangle Width="15"
+                                               Height="15"
+                                               Fill="#373737"
+                                               Margin="0,0,5,0" />
+                                    <TextBlock Text="Free space"
+                                               VerticalAlignment="Center"
+                                               Foreground="White"
+                                               FontSize="12" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </ContentControl>
+
+                    <ContentControl Grid.Row="0"
+                                    Grid.Column="2"
+                                    Template="{StaticResource CardTemplate}"
+                                    Tag="Network Speed"
+                                    >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Download Icon and Info -->
+                            <StackPanel Grid.Column="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center">
+                                <Border Width="80"
+                                        Height="80"
+                                        Background="#181818"
+                                        CornerRadius="40">
+                                    <fa:IconBlock Icon="Download"
+                                                  VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Foreground="LimeGreen"
+                                                  FontSize="36" />
+                                </Border>
+                                <TextBlock Text="5 Mbps"
+                                       x:Name="DownloadSpeedText"
+                                       FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="White"
+                                           HorizontalAlignment="Center" />
+                                <TextBlock Text="Download"
+                                           FontSize="14"
+                                           Foreground="Gray"
+                                           HorizontalAlignment="Center" />
+                            </StackPanel>
+
+                            <!-- Upload Icon and Info -->
+                            <StackPanel Grid.Column="1"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center">
+                                <Border Width="80"
+                                        Height="80"
+                                        Background="#181818"
+                                        CornerRadius="40">
+                                    <fa:IconBlock Icon="Upload"
+                                                  VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Foreground="Red"
+                                                  FontSize="36" />
+                                </Border>
+                                <TextBlock Text="1 Mbps"
+                                       x:Name="UploadSpeedText"
+                                       FontSize="18"
+                                           FontWeight="Bold"
+                                           Foreground="White"
+                                           HorizontalAlignment="Center" />
+                                <TextBlock Text="Upload"
+                                           FontSize="14"
+                                           Foreground="Gray"
+                                           HorizontalAlignment="Center" />
+                            </StackPanel>
+                        </Grid>
+
+                    </ContentControl>
+
+                    <ContentControl Grid.Column="0"
+                                    Template="{StaticResource CardTemplate}"
+                                    Tag="Disk Usage"
+                                    
+                                    Margin="0,332,0,0"
+                                    Grid.RowSpan="2">
+                        <Grid>
+
+                            <lvc:Gauge x:Name="Disk_Gauge"
+                                       StrokeThickness="1"
+                                       From="0"
+                                       To="100"
+                                       Value="40"
+                                       Foreground="#ffffff"
+                                       Stroke="#373737"
+                                       Margin="20"
+                                       InnerRadius="150"
+                                   ToColor="#FF49A1"
+                                   FromColor="#FF49A1"
+                                   FontFamily="Poppins"
+                                       HorizontalAlignment="Stretch"
+                                       VerticalAlignment="Stretch"
+                                       UseLayoutRounding="True">
+                                <!-- Event for size change -->
+                                <lvc:Gauge.GaugeBackground>
+                                    <SolidColorBrush Color="White"
+                                                     Opacity="0.1" />
+                                </lvc:Gauge.GaugeBackground>
+                            </lvc:Gauge>
+                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Bottom"
+                                        Grid.Row="2"
+                                        Margin="0,0,0,0">
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="10">
+                                    <Rectangle Width="15"
+                                               Height="15"
+                                               Fill="#ff49a1"
+                                               Margin="0,0,5,0" />
+                                    <TextBlock Text="Used space"
+                                               VerticalAlignment="Center"
+                                               Foreground="White"
+                                               FontSize="12" />
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="10">
+                                    <Rectangle Width="15"
+                                               Height="15"
+                                               Fill="#373737"
+                                               Margin="0,0,5,0" />
+                                    <TextBlock Text="Free space"
+                                               VerticalAlignment="Center"
+                                               Foreground="White"
+                                               FontSize="12" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </ContentControl>
+
+                    <ContentControl Grid.Column="1"
+                                    Template="{StaticResource CardTemplate}"
+                                    Tag="Performance"
+                                    
+                                    Grid.Row="2">
+                        <Grid>
+
+                            <lvc:Gauge x:Name="Performance_Gauge"
+                                       StrokeThickness="1"
+                                       From="0"
+                                       To="100"
+                                       Value="40"
+                                       Foreground="#ffffff"
+                                       Stroke="#373737"
+                                       Margin="20"
+                                       InnerRadius="80"
+                                   ToColor="#3687ff"
+                                   FromColor="#3687ff"
+                                       FontFamily="Poppins"
+                                       HorizontalAlignment="Stretch"
+                                       VerticalAlignment="Stretch"
+                                       UseLayoutRounding="True"
+                                       Uses360Mode="True">
+                                <!-- Event for size change -->
+                                <lvc:Gauge.GaugeBackground>
+                                    <SolidColorBrush Color="White"
+                                                     Opacity="0.1" />
+                                </lvc:Gauge.GaugeBackground>
+                            </lvc:Gauge>
+                        </Grid>
+                    </ContentControl>
+
+                    <ContentControl Grid.Column="2"
+                                    Grid.Row="1"
+                                    Template="{StaticResource CardTemplate}"
+                                    Tag="Quick Action"
+                                >
+                        <StackPanel>
+                        <TextBlock Text="Optimize your PC for peak performance and smoother operation. Boost speed, clear unnecessary files, and enhance efficiency."
+                                   TextWrapping="Wrap"
+                                   Margin="10"
+                                   FontSize="14"
+                                   Foreground="White"
+                                   TextAlignment="Justify" />
+                        <Button Style="{StaticResource RoundedButton}"
+                                    Content="Optimize Now"
+                                    Background="Red"
+                                    FontSize="15"
+                                    Margin="10" />
+                        </StackPanel>
+                    </ContentControl>
+
+                </Grid>
+
+            <!--</ScrollViewer>-->
+        </Border>
+    </Grid>
+
+
+</Page>
