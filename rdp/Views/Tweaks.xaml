@@ -46,6 +46,13 @@
                     </ItemsControl.ItemsPanel>
 
                     <!-- Add Your User Controls Here -->
+                    <local:UCMitigations Loaded="UCMitigations_Loaded" />
+                    <local:UCMitigations />
+                    <local:UCMitigations />
+                    <local:UCMitigations />
+                    <local:UCMitigations />
+                    <local:UCMitigations />
+                    <local:UCMitigations />
                     <local:UCMitigations />
                     <local:UCMitigations />
                     <local:UCMitigations />

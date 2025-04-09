@@ -39,5 +39,10 @@ namespace rdp.Views
         {
 
         }
+
+        private void UCMitigations_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

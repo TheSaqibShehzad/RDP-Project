@@ -49,5 +49,10 @@ namespace rdp
             if (e.MouseDevice.LeftButton == MouseButtonState.Pressed)
                 DragMove();
         }
+
+        private void NavButton_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

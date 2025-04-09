@@ -57,7 +57,8 @@
                              BorderThickness="0"
                              Padding="5"
                              VerticalContentAlignment="Center"
-                             Text="">
+                             Text=""
+                             Name="ActivationCodeTextBox">
                         <TextBox.Style>
                             <Style TargetType="{x:Type TextBox}">
                                 <Setter Property="Template">
