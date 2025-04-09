@@ -109,6 +109,33 @@
                     <local:Hidusbf/>
                     <local:KBBoost/>
                     <local:Logpages/>
+                    <local:MaxSSDPower/>
+                    <local:NoECC/>
+                    <local:NVIDIACONTROLPANELSETTINGS/>
+                    <local:OptimizeAMDAdvancedSettings/>
+                    <local:OptimizeAMDColorSettings/>
+                    <local:OptimizeAMDGeneralSettings/>
+                    <local:OptimizeAMDPowersavings/>
+                    <local:OptimizeAMDServices/>
+                    <local:OptimizeDVRSettings/>
+                    <local:OptimizeNVMESpeed/>
+                    <local:PreventCPUThrottlingDuringPlayback/>
+                    <local:ReduceOtherServicesPrioritiy/>
+                    <local:RunandDownloadAutoRun/>
+                    <local:RunandDownloadDeviceCleanup/>
+                    <local:RunandDownloadWindowsPrivacyTweaker/>
+                    <local:RunandDownloadWPD/>
+                    <local:SetExplorersLaunchToComputer/>
+                    <local:SetProcessorPerformancetoMaximum/>
+                    <local:TempCleanup/>
+                    <local:TweakTDRSettings/>
+                    <local:TweaksNVIDIALatencyTolerance/>
+                    <local:UnrestrictedClockPolicybyCancerogeno/>
+                    <local:Win32Priority/>
+                    <local:Windows10Debloater/>
+                    <local:Windows10DebloaterGUI/>
+                    <local:Windows10SysPrepDebloater/>
+                    <local:XHCI_IMOD_Interval/>
 
                 </ItemsControl>
             </ScrollViewer>

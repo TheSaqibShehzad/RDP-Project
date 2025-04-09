@@ -210,6 +210,87 @@
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tweak\Windows10SysPrepDebloater.xaml.cs">
+      <DependentUpon>Windows10SysPrepDebloater.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\XHCI_IMOD_Interval.xaml.cs">
+      <DependentUpon>XHCI_IMOD_Interval.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\NoECC.xaml.cs">
+      <DependentUpon>NoECC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\OptimizeAMDColorSettings.xaml.cs">
+      <DependentUpon>OptimizeAMDColorSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\OptimizeAMDPowersavings.xaml.cs">
+      <DependentUpon>OptimizeAMDPowersavings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\RunandDownloadDeviceCleanup.xaml.cs">
+      <DependentUpon>RunandDownloadDeviceCleanup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\RunandDownloadAutoRun.xaml.cs">
+      <DependentUpon>RunandDownloadAutoRun.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\OptimizeAMDGeneralSettings.xaml.cs">
+      <DependentUpon>OptimizeAMDGeneralSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\RunandDownloadWindowsPrivacyTweaker.xaml.cs">
+      <DependentUpon>RunandDownloadWindowsPrivacyTweaker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\RunandDownloadWPD.xaml.cs">
+      <DependentUpon>RunandDownloadWPD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\UnrestrictedClockPolicybyCancerogeno.xaml.cs">
+      <DependentUpon>UnrestrictedClockPolicybyCancerogeno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\ReduceOtherServicesPrioritiy.xaml.cs">
+      <DependentUpon>ReduceOtherServicesPrioritiy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\OptimizeAMDServices.xaml.cs">
+      <DependentUpon>OptimizeAMDServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\TempCleanup.xaml.cs">
+      <DependentUpon>TempCleanup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\OptimizeNVMESpeed.xaml.cs">
+      <DependentUpon>OptimizeNVMESpeed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\SetExplorersLaunchToComputer.xaml.cs">
+      <DependentUpon>SetExplorersLaunchToComputer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\SetProcessorPerformancetoMaximum.xaml.cs">
+      <DependentUpon>SetProcessorPerformancetoMaximum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\Windows10DebloaterGUI.xaml.cs">
+      <DependentUpon>Windows10DebloaterGUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\Windows10Debloater.xaml.cs">
+      <DependentUpon>Windows10Debloater.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\TweakTDRSettings.xaml.cs">
+      <DependentUpon>TweakTDRSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\Win32Priority.xaml.cs">
+      <DependentUpon>Win32Priority.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\TweaksNVIDIALatencyTolerance.xaml.cs">
+      <DependentUpon>TweaksNVIDIALatencyTolerance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\PreventCPUThrottlingDuringPlayback.xaml.cs">
+      <DependentUpon>PreventCPUThrottlingDuringPlayback.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\OptimizeDVRSettings.xaml.cs">
+      <DependentUpon>OptimizeDVRSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\OptimizeAMDAdvancedSettings.xaml.cs">
+      <DependentUpon>OptimizeAMDAdvancedSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\NVIDIACONTROLPANELSETTINGS.xaml.cs">
+      <DependentUpon>NVIDIACONTROLPANELSETTINGS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\MaxSSDPower.xaml.cs">
+      <DependentUpon>MaxSSDPower.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Tweak\Logpages.xaml.cs">
       <DependentUpon>Logpages.xaml</DependentUpon>
     </Compile>
@@ -440,6 +521,114 @@
     <Page Include="Views\Header.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tweak\Windows10SysPrepDebloater.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\XHCI_IMOD_Interval.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\NoECC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\OptimizeAMDColorSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\OptimizeAMDPowersavings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\RunandDownloadDeviceCleanup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\RunandDownloadAutoRun.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\OptimizeAMDGeneralSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\RunandDownloadWindowsPrivacyTweaker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\RunandDownloadWPD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\UnrestrictedClockPolicybyCancerogeno.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\ReduceOtherServicesPrioritiy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\OptimizeAMDServices.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\TempCleanup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\OptimizeNVMESpeed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\SetExplorersLaunchToComputer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\SetProcessorPerformancetoMaximum.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\Windows10DebloaterGUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\Windows10Debloater.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\TweakTDRSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\Win32Priority.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\TweaksNVIDIALatencyTolerance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\PreventCPUThrottlingDuringPlayback.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\OptimizeDVRSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\OptimizeAMDAdvancedSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\NVIDIACONTROLPANELSETTINGS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\MaxSSDPower.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Tweak\Logpages.xaml">
       <Generator>MSBuild:Compile</Generator>
