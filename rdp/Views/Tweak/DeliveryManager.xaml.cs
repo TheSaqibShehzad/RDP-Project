@@ -18,9 +18,9 @@ namespace rdp.Views.Tweak
     /// <summary>
     /// Interaction logic for UCMitigations.xaml
     /// </summary>
-    public partial class Animations : UserControl
+    public partial class DeliveryManager : UserControl
     {
-        public Animations()
+        public DeliveryManager()
         {
             InitializeComponent();
         }

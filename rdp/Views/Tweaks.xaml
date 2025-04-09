@@ -73,6 +73,25 @@
                     <local:DisableWindowsRemediation />
                     <local:DisableWindowsSpotlight />
                     <local:DisableWindowsTips />
+                    <local:DisablingDmaRemapping />
+                    <local:EnableGamemode />
+                    <local:Fsutilbehaviors />
+                    <local:LSC />
+                    <local:NTFSTweaks />
+                    <local:TimeStamp />
+                    <local:WindowsPrivacySettings />
+                    <local:KBM />
+                    <local:ApplyDPCKernelTweaks />
+                    <local:ApplyKernelTweaks />
+                    <local:ChromeCleanup />
+                    <local:CleanSystemLog />
+                    <local:ClearCookies/>
+                    <local:ClearLastUsedFilesandFolders/>
+                    <local:ClearRecycleBin/>
+                    <local:DeleteNvidiaTelemetry/>
+                    <local:DisableAMDlogging/>
+                    <local:DisableCstate/>
+                    <local:DisableDisplayTurnOff/>
 
                 </ItemsControl>
             </ScrollViewer>
