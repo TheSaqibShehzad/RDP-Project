@@ -210,6 +210,57 @@
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tweak\Logpages.xaml.cs">
+      <DependentUpon>Logpages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\KBBoost.xaml.cs">
+      <DependentUpon>KBBoost.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\Hidusbf.xaml.cs">
+      <DependentUpon>Hidusbf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\FullSytemCleaner.xaml.cs">
+      <DependentUpon>FullSytemCleaner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\ForceP0State.xaml.cs">
+      <DependentUpon>ForceP0State.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\ExtraFiles.xaml.cs">
+      <DependentUpon>ExtraFiles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\EpicgamesCleanup.xaml.cs">
+      <DependentUpon>EpicgamesCleanup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableUSBSelectiveSuspend.xaml.cs">
+      <DependentUpon>DisableUSBSelectiveSuspend.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableThrottleStates.xaml.cs">
+      <DependentUpon>DisableThrottleStates.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableSleep.xaml.cs">
+      <DependentUpon>DisableSleep.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableScaling.xaml.cs">
+      <DependentUpon>DisableScaling.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableNetworkAdapterPowerSaving.xaml.cs">
+      <DependentUpon>DisableNetworkAdapterPowerSaving.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableLinkPowerManagement.xaml.cs">
+      <DependentUpon>DisableLinkPowerManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableLastUsedFilesandFoldersView.xaml.cs">
+      <DependentUpon>DisableLastUsedFilesandFoldersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableHDCP.xaml.cs">
+      <DependentUpon>DisableHDCP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableHardDiskTurnOff.xaml.cs">
+      <DependentUpon>DisableHardDiskTurnOff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableGPUautoupdate.xaml.cs">
+      <DependentUpon>DisableGPUautoupdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Tweak\WindowsPrivacySettings.xaml.cs">
       <DependentUpon>WindowsPrivacySettings.xaml</DependentUpon>
     </Compile>
@@ -389,6 +440,74 @@
     <Page Include="Views\Header.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tweak\Logpages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\KBBoost.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\Hidusbf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\FullSytemCleaner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\ForceP0State.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\ExtraFiles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\EpicgamesCleanup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableUSBSelectiveSuspend.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableThrottleStates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableSleep.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableScaling.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableNetworkAdapterPowerSaving.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableLinkPowerManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableLastUsedFilesandFoldersView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableHDCP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableHardDiskTurnOff.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableGPUautoupdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Tweak\WindowsPrivacySettings.xaml">
       <Generator>MSBuild:Compile</Generator>

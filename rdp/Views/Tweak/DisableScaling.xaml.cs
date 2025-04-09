@@ -18,16 +18,16 @@ namespace rdp.Views.Tweak
     /// <summary>
     /// Interaction logic for UCMitigations.xaml
     /// </summary>
-    public partial class Animations : UserControl
+    public partial class DisableScaling : UserControl
     {
-        public Animations()
+        public DisableScaling()
         {
             InitializeComponent();
         }
         public void Toggle_Checked(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Checked");
-            //Tweaks.ApiTest("", true , false );
+            Tweaks.ApiTest("", true , false );
         }
         public void Toggle_UnChecked(object sender, RoutedEventArgs e)
         {

@@ -92,6 +92,23 @@
                     <local:DisableAMDlogging/>
                     <local:DisableCstate/>
                     <local:DisableDisplayTurnOff/>
+                    <local:DisableGPUautoupdate/>
+                    <local:DisableHardDiskTurnOff/>
+                    <local:DisableHDCP/>
+                    <local:DisableLastUsedFilesandFoldersView/>
+                    <local:DisableLinkPowerManagement/>
+                    <local:DisableNetworkAdapterPowerSaving/>
+                    <local:DisableScaling/>
+                    <local:DisableSleep/>
+                    <local:DisableThrottleStates/>
+                    <local:DisableUSBSelectiveSuspend/>
+                    <local:EpicgamesCleanup/>
+                    <local:ExtraFiles/>
+                    <local:ForceP0State/>
+                    <local:FullSytemCleaner/>
+                    <local:Hidusbf/>
+                    <local:KBBoost/>
+                    <local:Logpages/>
 
                 </ItemsControl>
             </ScrollViewer>
