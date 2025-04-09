@@ -64,6 +64,15 @@
                     <local:DisableScheduledTasks />
                     <local:DisableSharedExperiences />
                     <local:DisableSleepStudy />
+                    <local:DisableStorPortIdle />
+                    <local:DisableTailoredExperiences />
+                    <local:DisableUSBDevicesIdle />
+                    <local:DisableUSBPowersaving />
+                    <local:DisableWindowsErrorReporting />
+                    <local:DisableWindowsInsiderExperiments />
+                    <local:DisableWindowsRemediation />
+                    <local:DisableWindowsSpotlight />
+                    <local:DisableWindowsTips />
 
                 </ItemsControl>
             </ScrollViewer>

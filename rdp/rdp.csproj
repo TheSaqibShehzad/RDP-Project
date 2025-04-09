@@ -210,6 +210,33 @@
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tweak\DisableWindowsTips.xaml.cs">
+      <DependentUpon>DisableWindowsTips.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableWindowsSpotlight.xaml.cs">
+      <DependentUpon>DisableWindowsSpotlight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableWindowsRemediation.xaml.cs">
+      <DependentUpon>DisableWindowsRemediation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableWindowsInsiderExperiments.xaml.cs">
+      <DependentUpon>DisableWindowsInsiderExperiments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableWindowsErrorReporting.xaml.cs">
+      <DependentUpon>DisableWindowsErrorReporting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableUSBPowersaving.xaml.cs">
+      <DependentUpon>DisableUSBPowersaving.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableUSBDevicesIdle.xaml.cs">
+      <DependentUpon>DisableUSBDevicesIdle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableTailoredExperiences.xaml.cs">
+      <DependentUpon>DisableTailoredExperiences.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableStorPortIdle.xaml.cs">
+      <DependentUpon>DisableStorPortIdle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Tweak\DisableSleepStudy.xaml.cs">
       <DependentUpon>DisableSleepStudy.xaml</DependentUpon>
     </Compile>
@@ -305,6 +332,42 @@
     <Page Include="Views\Header.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Tweak\DisableWindowsTips.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableWindowsSpotlight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableWindowsRemediation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableWindowsInsiderExperiments.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableWindowsErrorReporting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableUSBPowersaving.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableUSBDevicesIdle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableTailoredExperiences.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableStorPortIdle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Tweak\DisableSleepStudy.xaml">
       <Generator>MSBuild:Compile</Generator>
