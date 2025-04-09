@@ -210,14 +210,65 @@
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tweak\DisableSleepStudy.xaml.cs">
+      <DependentUpon>DisableSleepStudy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableSharedExperiences.xaml.cs">
+      <DependentUpon>DisableSharedExperiences.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableScheduledTasks.xaml.cs">
+      <DependentUpon>DisableScheduledTasks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableProcessMitigations.xaml.cs">
+      <DependentUpon>DisableProcessMitigations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisablePowerthrottling.xaml.cs">
+      <DependentUpon>DisablePowerthrottling.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisablePagingExecutive.xaml.cs">
+      <DependentUpon>DisablePagingExecutive.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisablePageCombining.xaml.cs">
+      <DependentUpon>DisablePageCombining.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableNotifications.xaml.cs">
+      <DependentUpon>DisableNotifications.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableMemoryCompression.xaml.cs">
+      <DependentUpon>DisableMemoryCompression.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableIoLatencyCap.xaml.cs">
+      <DependentUpon>DisableIoLatencyCap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableHIPM_DIPM.xaml.cs">
+      <DependentUpon>DisableHIPM_DIPM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableHibernation.xaml.cs">
+      <DependentUpon>DisableHibernation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableGpuEnergyDrv.xaml.cs">
+      <DependentUpon>DisableGpuEnergyDrv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableFTH.xaml.cs">
+      <DependentUpon>DisableFTH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableEnergyLogging.xaml.cs">
+      <DependentUpon>DisableEnergyLogging.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DisableAutoLoggers.xaml.cs">
+      <DependentUpon>DisableAutoLoggers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tweak\DeliveryManager.xaml.cs">
+      <DependentUpon>DeliveryManager.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UCSpaceUsage.xaml.cs">
       <DependentUpon>UCSpaceUsage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Tweaks.xaml.cs">
       <DependentUpon>Tweaks.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UCMitigations.xaml.cs">
-      <DependentUpon>UCMitigations.xaml</DependentUpon>
+    <Compile Include="Views\Tweak\Animations.xaml.cs">
+      <DependentUpon>Animations.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -255,6 +306,74 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Tweak\DisableSleepStudy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableSharedExperiences.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableScheduledTasks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableProcessMitigations.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisablePowerthrottling.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisablePagingExecutive.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisablePageCombining.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableNotifications.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableMemoryCompression.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableIoLatencyCap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableHIPM_DIPM.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableHibernation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableGpuEnergyDrv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableFTH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableEnergyLogging.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DisableAutoLoggers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tweak\DeliveryManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\UCSpaceUsage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -263,7 +382,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UCMitigations.xaml">
+    <Page Include="Views\Tweak\Animations.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

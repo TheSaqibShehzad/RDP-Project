@@ -13,16 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace rdp.Views
+namespace rdp.Views.Tweak
 {
     /// <summary>
     /// Interaction logic for UCMitigations.xaml
     /// </summary>
-    public partial class UCMitigations : UserControl
+    public partial class DisableEnergyLogging : UserControl
     {
-        public UCMitigations()
+        public DisableEnergyLogging()
         {
             InitializeComponent();
+        }
+        public void Toggle_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Checked");
         }
     }
 }

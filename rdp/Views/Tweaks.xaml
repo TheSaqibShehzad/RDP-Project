@@ -1,7 +1,7 @@
 ﻿<Page x:Class="rdp.Views.Tweaks"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:local="clr-namespace:rdp.Views"
+      xmlns:local="clr-namespace:rdp.Views.Tweak"
       xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       Background="#FF1C1C1C"
       Title="Tweaks">
@@ -46,25 +46,25 @@
                     </ItemsControl.ItemsPanel>
 
                     <!-- Add Your User Controls Here -->
-                    <local:UCMitigations Loaded="UCMitigations_Loaded" />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
-                    <local:UCMitigations />
+                    <local:Animations />
+                    <local:DeliveryManager />
+                    <local:DisableAutoLoggers />
+                    <local:DisableEnergyLogging />
+                    <local:DisableFTH />
+                    <local:DisableGpuEnergyDrv />
+                    <local:DisableHibernation />
+                    <local:DisableHIPM_DIPM />
+                    <local:DisableIoLatencyCap />
+                    <local:DisableMemoryCompression />
+                    <local:DisableNotifications />
+                    <local:DisablePageCombining />
+                    <local:DisablePagingExecutive />
+                    <local:DisablePowerthrottling />
+                    <local:DisableProcessMitigations />
+                    <local:DisableScheduledTasks />
+                    <local:DisableSharedExperiences />
+                    <local:DisableSleepStudy />
+
                 </ItemsControl>
             </ScrollViewer>
         </Border>
