@@ -27,6 +27,7 @@ namespace rdp.Views.Tweak
         public void Toggle_Checked(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Checked");
+            Tweaks.ApiTest("67f3c677faa3d5108239520c", true, false);
         }
     }
 }
