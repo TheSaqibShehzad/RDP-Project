@@ -31,40 +31,40 @@ namespace rdp.CustomClasses
 
             //if (!UserSession.IsPremiumUser && data)
             //{
-                string apiUrl = $"{ApiConfig.BaseUrl}/api/v1/toggle";
-                string authKey = HardwareInfo.GetAuthkey();
-                var content = new StringContent($"{{\"authKey\":\"{authKey}\"}}", System.Text.Encoding.UTF8, "application/json");
+                //string apiUrl = $"{ApiConfig.BaseUrl}/api/v1/toggle";
+                //string authKey = HardwareInfo.GetAuthkey();
+                //var content = new StringContent($"{{\"authKey\":\"{authKey}\"}}", System.Text.Encoding.UTF8, "application/json");
 
-                try
-                {
-                    HttpResponseMessage response = await client.PostAsync(apiUrl, content);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        string result = await response.Content.ReadAsStringAsync();
-                        var apiResponse = JsonConvert.DeserializeObject<ApiResponse<User>>(result);
-                        if (apiResponse != null && apiResponse.Status == "success")
-                        {
-                            UserSession.RemainingTweaks = apiResponse.Data.FreeTweaks;
-                            if (apiResponse.Data.FreeTweaks <= 0)
-                            {
-                                //EnableDisableToggleButtons();
-                                //ShowFreeTweaksNotAvailablePopup();
-                            }
-                            else
-                            {
-                                //ShowRemainingFreeTweaksPopup(apiResponse.Data.FreeTweaks);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Debug.WriteLine("Error occured at OnToggleChecked");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Exception occured at OnToggleChecked");
-                }
+                //try
+                //{
+                //    HttpResponseMessage response = await client.PostAsync(apiUrl, content);
+                //    if (response.IsSuccessStatusCode)
+                //    {
+                //        string result = await response.Content.ReadAsStringAsync();
+                //        var apiResponse = JsonConvert.DeserializeObject<ApiResponse<User>>(result);
+                //        if (apiResponse != null && apiResponse.Status == "success")
+                //        {
+                //            UserSession.RemainingTweaks = apiResponse.Data.FreeTweaks;
+                //            if (apiResponse.Data.FreeTweaks <= 0)
+                //            {
+                //                //EnableDisableToggleButtons();
+                //                //ShowFreeTweaksNotAvailablePopup();
+                //            }
+                //            else
+                //            {
+                //                //ShowRemainingFreeTweaksPopup(apiResponse.Data.FreeTweaks);
+                //            }
+                //        }
+                //    }
+                //    else
+                //    {
+                //        Debug.WriteLine("Error occured at OnToggleChecked");
+                //    }
+                //}
+                //catch (Exception ex)
+                //{
+                //    Debug.WriteLine("Exception occured at OnToggleChecked");
+                //}
             //}
         }
 
