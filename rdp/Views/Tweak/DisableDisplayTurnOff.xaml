@@ -38,6 +38,7 @@
                               Foreground="White"
                               BorderThickness="0"
 							  Checked ="Toggle_Checked"
+                              Unchecked="Toggle_UnChecked"
                               IsChecked="False">
                     <ToggleButton.Style>
                         <Style TargetType="ToggleButton">
