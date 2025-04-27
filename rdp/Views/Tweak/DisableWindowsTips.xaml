@@ -72,7 +72,8 @@
 
             <!-- Description Section -->
             <TextBlock Grid.Row="1"
-                       Text="Disabling mitigations involves turning off certain security features. This can sometimes improve performance but may also increase security risks. Weigh the trade-offs carefully before making changes."
+                       Text="Disables the "Soft
+                       Landing" feature, which prevents promotional content and recommendations from being displayed on the Start Menu."
                        TextWrapping="Wrap"
                        Foreground="LightGray"
                        Margin="0,10,0,10"

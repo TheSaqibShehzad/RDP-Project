@@ -73,7 +73,7 @@
 
             <!-- Description Section -->
             <TextBlock Grid.Row="1"
-                       Text="Disabling mitigations involves turning off certain security features. This can sometimes improve performance but may also increase security risks. Weigh the trade-offs carefully before making changes."
+                       Text="Disables dynamic power states for PCI video controllers by modifying the registry, potentially improving GPU performance."
                        TextWrapping="Wrap"
                        Foreground="LightGray"
                        Margin="0,10,0,10"

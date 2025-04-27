@@ -72,7 +72,7 @@
 
             <!-- Description Section -->
             <TextBlock Grid.Row="1"
-                       Text="Disabling mitigations involves turning off certain security features. This can sometimes improve performance but may also increase security risks. Weigh the trade-offs carefully before making changes."
+                       Text="Disables paging of kernel-mode executables to improve performance and system stability, and enables contiguous mapping of IOMMU (Input-Output Memory Management Unit) to improve graphics driver efficiency."
                        TextWrapping="Wrap"
                        Foreground="LightGray"
                        Margin="0,10,0,10"

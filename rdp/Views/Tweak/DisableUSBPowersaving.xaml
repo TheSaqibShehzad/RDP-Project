@@ -72,7 +72,7 @@
 
             <!-- Description Section -->
             <TextBlock Grid.Row="1"
-                       Text="Disabling mitigations involves turning off certain security features. This can sometimes improve performance but may also increase security risks. Weigh the trade-offs carefully before making changes."
+                       Text="Disables various USB power management features by updating registry entries, preventing devices from entering idle or low-power states. This ensures better performance and responsiveness for connected USB devices."
                        TextWrapping="Wrap"
                        Foreground="LightGray"
                        Margin="0,10,0,10"

@@ -73,7 +73,12 @@
 
             <!-- Description Section -->
             <TextBlock Grid.Row="1"
-                       Text="Disabling mitigations involves turning off certain security features. This can sometimes improve performance but may also increase security risks. Weigh the trade-offs carefully before making changes."
+                       Text="1. Clears temporary files, logs, and caches to free up disk space.
+2. Deletes browser, Fortnite, and Epic Games cache and logs.
+3. Removes redundant files from system and user directories.
+4. Restarts Windows Explorer to refresh the user interface.
+5. Runs Disk Cleanup to remove unnecessary system files.
+6. Clears Software Distribution folder to resolve update issues."
                        TextWrapping="Wrap"
                        Foreground="LightGray"
                        Margin="0,10,0,10"
