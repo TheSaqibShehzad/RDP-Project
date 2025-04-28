@@ -38,6 +38,7 @@
                               Foreground="White"
                               BorderThickness="0"
 							  Checked ="Toggle_Checked"
+                              Unchecked="Toggle_UnChecked"
                               IsChecked="False">
                     <ToggleButton.Style>
                         <Style TargetType="ToggleButton">
@@ -72,8 +73,7 @@
 
             <!-- Description Section -->
             <TextBlock Grid.Row="1"
-                       Text="Disables the "Soft
-                       Landing" feature, which prevents promotional content and recommendations from being displayed on the Start Menu."
+                       Text="Disables the Soft Landing feature, which prevents promotional content and recommendations from being displayed on the Start Menu."
                        TextWrapping="Wrap"
                        Foreground="LightGray"
                        Margin="0,10,0,10"
