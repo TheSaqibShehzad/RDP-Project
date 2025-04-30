@@ -67,6 +67,8 @@ namespace rdp.Views
                     case 401:
                     case 500:
                         // show error
+                        MessageBox.Show("fail");
+
                         return;
 
                     case 200:
@@ -91,7 +93,7 @@ namespace rdp.Views
                                     RedirectStandardInput = true,
                                     RedirectStandardOutput = true,
                                     RedirectStandardError = true,
-                                    CreateNoWindow = true
+                                    CreateNoWindow = false
                                 }
                             };
 
@@ -123,6 +125,7 @@ namespace rdp.Views
 
                     default:
                         // show error
+                        MessageBox.Show("fail");
                         return;
                 }
             }

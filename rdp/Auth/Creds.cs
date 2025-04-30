@@ -25,7 +25,7 @@ namespace rdp.Auth
 
         // Hyper Official
         public static string name = "rdp";
-        public static string ownerid = "EdmsTKiuld";
+        public static string ownerid = "Rwv1ehf0hR";
         public static string version = "1.0";
     }
 }
