@@ -79,7 +79,7 @@ namespace rdp.Views
                         {
                             string batchContent = data["batchContent"].Value<string>();
                             string batchTitle = data["batchTitle"].Value<string>();
-                            batchContent += "\r\nexit";
+                            //batchContent += "\r\nexit";
                             Debug.WriteLine(batchContent);
 
                             var p = new Process
